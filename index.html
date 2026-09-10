@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blue Collar Plumbing Co. | San Antonio</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#102033;
+  background:#fff;
+  line-height:1.55;
+}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}
+
+.top{
+  background:#050d17;
+  color:#fff;
+  text-align:center;
+  padding:9px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.5px;
+}
+
+nav{
+  background:#071426;
+  color:#fff;
+  padding:18px 0;
+}
+.navin{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.brand{
+  font-size:21px;
+  font-weight:900;
+}
+.brand span{color:#58b5ff}
+
+.call{
+  background:#ff6b35;
+  color:#fff;
+  padding:12px 17px;
+  border-radius:9px;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.hero{
+  background:
+    linear-gradient(120deg,rgba(7,20,38,.97),rgba(10,55,96,.91)),
+    url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1600&q=80')
+    center/cover;
+  color:#fff;
+  padding:90px 0 82px;
+}
+
+.eyebrow{
+  color:#78c7ff;
+  font-weight:900;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.hero h1{
+  font-size:clamp(42px,8vw,76px);
+  line-height:.98;
+  margin:14px 0 20px;
+  max-width:820px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:670px;
+  color:#dbeaff;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.primary,.secondary{
+  display:inline-block;
+  padding:15px 21px;
+  border-radius:9px;
+  font-weight:900;
+  text-decoration:none;
+}
+
+.primary{
+  background:#ff6b35;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #78c7ff;
+  color:#fff;
+}
+
+.trust{
+  background:#0d6fc6;
+  color:#fff;
+  padding:18px 0;
+}
+
+.trustin{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  font-weight:800;
+}
+
+.section{padding:70px 0}
+.center{text-align:center}
+
+.section h2{
+  font-size:clamp(32px,5vw,48px);
+  margin:0 0 12px;
+}
+
+.lead{
+  max-width:700px;
+  margin:0 auto 35px;
+  color:#536477;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  border:1px solid #dbe6f0;
+  border-radius:14px;
+  padding:26px;
+  background:#fff;
+  box-shadow:0 8px 30px rgba(12,35,60,.07);
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.card p{
+  margin:0;
+  color:#607080;
+}
+
+.why{background:#eaf5ff}
+
+.twocol{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:42px;
+  align-items:center;
+}
+
+.check{
+  margin:15px 0;
+  font-weight:800;
+}
+
+.check:before{
+  content:"✓";
+  color:#0d6fc6;
+  margin-right:10px;
+}
+
+.photo{
+  min-height:390px;
+  border-radius:18px;
+  background:
+    url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=80')
+    center/cover;
+  box-shadow:0 18px 50px rgba(7,20,38,.18);
+}
+
+.reviews{
+  background:#071426;
+  color:#fff;
+}
+
+.reviews .lead{color:#c6d7e8}
+
+.reviews .card{
+  background:#0d2036;
+  border-color:#1b3b5d;
+  color:#fff;
+}
+
+.reviews .card p{color:#c6d7e8}
+
+.stars{
+  color:#ffc857;
+  letter-spacing:2px;
+}
+
+.demo{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#8ca5bd;
+  margin-top:12px;
+}
+
+.cta{
+  background:linear-gradient(120deg,#0d6fc6,#06365f);
+  color:#fff;
+  padding:65px 0;
+  text-align:center;
+}
+
+.cta h2{
+  font-size:clamp(34px,6vw,52px);
+  margin:0 0 12px;
+}
+
+.cta p{font-size:19px}
+
+.footer{
+  background:#050d17;
+  color:#aab9c8;
+  padding:30px 0;
+  text-align:center;
+  font-size:13px;
+}
+
+.footer strong{color:#fff}
+
+@media(max-width:760px){
+  .grid,.twocol{grid-template-columns:1fr}
+  .hero{padding:68px 0}
+  .brand{font-size:17px}
+  .call{font-size:13px;padding:10px 12px}
+  .trustin{justify-content:center;text-align:center}
+  .photo{min-height:300px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+24/7 EMERGENCY PLUMBING • SAN ANTONIO, TEXAS
+</div>
+
+<nav>
+<div class="wrap navin">
+<div class="brand"><span>BLUE COLLAR</span> PLUMBING CO.</div>
+<a class="call" href="tel:+12105550197">CALL NOW</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="wrap">
+
+<div class="eyebrow">
+LOCAL • RELIABLE • STRAIGHT-SHOOTING
+</div>
+
+<h1>
+Plumbing problems don't wait.<br>
+Neither do we.
+</h1>
+
+<p>
+Fast, dependable residential and commercial plumbing service across San Antonio — without the runaround.
+</p>
+
+<div class="buttons">
+<a class="primary" href="tel:+12105550197">
+Call (210) 555-0197
+</a>
+
+<a class="secondary" href="#services">
+View Services
+</a>
+</div>
+
+</div>
+</header>
+
+<div class="trust">
+<div class="wrap trustin">
+<span>24/7 Emergency Service</span>
+<span>Upfront Communication</span>
+<span>Residential + Commercial</span>
+<span>San Antonio Local</span>
+</div>
+</div>
+
+<section class="section center" id="services">
+<div class="wrap">
+
+<h2>We fix the problem. Period.</h2>
+
+<p class="lead">
+From the annoying drip to the middle-of-the-night disaster, Blue Collar Plumbing is built to get your water moving and your day back on track.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Emergency Plumbing</h3>
+<p>Burst pipes, major leaks, backups and urgent plumbing problems when you need help now.</p>
+</div>
+
+<div class="card">
+<h3>Drain Cleaning</h3>
+<p>Slow drain or full blockage? We clear stubborn clogs and get things flowing again.</p>
+</div>
+
+<div class="card">
+<h3>Water Heaters</h3>
+<p>Repair and replacement for traditional and tankless water heater systems.</p>
+</div>
+
+<div class="card">
+<h3>Leak Detection</h3>
+<p>Find hidden leaks before they become bigger, more expensive problems.</p>
+</div>
+
+<div class="card">
+<h3>Fixtures & Faucets</h3>
+<p>Toilets, faucets, sinks, disposals and everyday plumbing repairs done right.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Plumbing</h3>
+<p>Responsive plumbing support for offices, retail spaces and local businesses.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section why">
+<div class="wrap twocol">
+
+<div>
+<div class="eyebrow">WHY BLUE COLLAR?</div>
+
+<h2>
+Good work.<br>
+Clear answers.<br>
+No nonsense.
+</h2>
+
+<p>
+Hiring a plumber shouldn't feel like gambling. You deserve someone who shows up, explains the problem clearly and respects your property.
+</p>
+
+<div class="check">Local San Antonio service</div>
+<div class="check">Straightforward communication</div>
+<div class="check">Clean, professional workmanship</div>
+<div class="check">Emergency help when it matters</div>
+
+<a class="primary" style="margin-top:15px" href="tel:+12105550197">
+Get Help Now
+</a>
+</div>
+
+<div class="photo" aria-label="Plumbing professional at work"></div>
+
+</div>
+</section>
+
+<section class="section reviews center">
+<div class="wrap">
+
+<h2>Neighbors helping neighbors.</h2>
+
+<p class="lead">
+What customers could say about the kind of service we aim to deliver.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<div class="stars">★★★★★</div>
+<h3>“Exactly what we needed.”</h3>
+<p>
+Quick response, clear explanation and no surprises. The problem was handled and the house was left clean.
+</p>
+<div class="demo">Demo testimonial • fictional company</div>
+</div>
+
+<div class="card">
+<div class="stars">★★★★★</div>
+<h3>“Showed up when promised.”</h3>
+<p>
+Professional from the first call through the repair. I'd absolutely call again.
+</p>
+<div class="demo">Demo testimonial • fictional company</div>
+</div>
+
+<div class="card">
+<div class="stars">★★★★★</div>
+<h3>“Saved our night.”</h3>
+<p>
+A plumbing emergency after hours is stressful. Having someone answer and take action made all the difference.
+</p>
+<div class="demo">Demo testimonial • fictional company</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="wrap">
+
+<h2>Got a plumbing problem?</h2>
+
+<p>
+Don't stare at it and hope it fixes itself. Give us a call.
+</p>
+
+<a class="primary" style="margin-top:14px" href="tel:+12105550197">
+Call (210) 555-0197
+</a>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="wrap">
+
+<strong>BLUE COLLAR PLUMBING CO.</strong><br>
+San Antonio, Texas • (210) 555-0197
+
+<br><br>
+
+This is a fictional demonstration website created to showcase a one-page small-business website. Blue Collar Plumbing Co. is not represented as an operating business.
+
+</div>
+</footer>
+
+</body>
+</html>
