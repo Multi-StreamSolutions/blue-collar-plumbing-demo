@@ -2,426 +2,258 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Blue Collar Plumbing Co. | San Antonio, Texas</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Blue Collar Plumbing Co. | San Antonio</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#071522;
+color:#fff;
+line-height:1.6
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,90%);margin:auto}
+
+header{
+background:#06111c;
+border-bottom:1px solid rgba(255,255,255,.12)
+}
+.nav{
+min-height:72px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+.brand{
+font-weight:900;
+font-size:20px
+}
+.brand span{color:#32a9ff}
+.phone{
+background:#ff6738;
+padding:11px 15px;
+border-radius:6px;
+font-weight:900
 }
 
-html {
-  scroll-behavior: smooth;
+.hero{
+min-height:680px;
+display:flex;
+align-items:center;
+position:relative;
+background:
+linear-gradient(90deg,
+rgba(4,18,31,.97) 0%,
+rgba(4,18,31,.88) 38%,
+rgba(4,18,31,.35) 70%,
+rgba(4,18,31,.08) 100%),
+url("24E18FED-9170-4932-A237-A1ACD33E6588.png")
+center/cover no-repeat;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #071522;
-  color: #ffffff;
-  line-height: 1.6;
+.hero-copy{
+max-width:620px;
+padding:80px 0 120px
+}
+.eyebrow{
+color:#5dc0ff;
+font-weight:900;
+letter-spacing:2px;
+font-size:13px;
+text-transform:uppercase
+}
+h1{
+font-size:clamp(45px,7vw,76px);
+line-height:.98;
+margin:16px 0 22px;
+text-transform:uppercase
+}
+h1 span{color:#32a9ff}
+.hero p{
+font-size:19px;
+color:#dbe8f2;
+max-width:560px
+}
+.buttons{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:28px
+}
+.btn{
+display:inline-block;
+padding:14px 20px;
+font-weight:900;
+border-radius:6px
+}
+.orange{background:#ff6738}
+.outline{border:1px solid #88cfff}
+
+.trust{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(3,13,22,.9);
+border-top:1px solid rgba(255,255,255,.14)
+}
+.trust-row{
+min-height:62px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
+font-size:13px;
+font-weight:800;
+text-transform:uppercase
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+section{padding:75px 0}
+.services{background:#0b1d2c}
+.label{
+color:#50baff;
+font-size:13px;
+font-weight:900;
+letter-spacing:2px;
+text-transform:uppercase
+}
+h2{
+font-size:clamp(34px,5vw,50px);
+line-height:1.05;
+margin:10px 0 18px
+}
+.intro{
+max-width:700px;
+color:#b8c6d1;
+font-size:17px
 }
 
-.wrap {
-  width: min(1120px, 90%);
-  margin: auto;
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:38px
+}
+.card{
+background:#10283b;
+border:1px solid rgba(255,255,255,.09);
+padding:26px;
+border-radius:8px
+}
+.card h3{
+font-size:21px;
+margin-bottom:9px
+}
+.card p{color:#b8c7d2}
+
+.about{background:#071522}
+.about-grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:45px;
+align-items:center
+}
+.about p{
+color:#b8c7d2;
+margin:15px 0;
+font-size:17px
+}
+.promise{
+background:#10283b;
+padding:30px;
+border-left:5px solid #ff6738
+}
+.promise h3{
+font-size:27px;
+margin-bottom:10px
 }
 
-/* HEADER */
-
-header {
-  background: #06111c;
-  border-bottom: 1px solid rgba(255,255,255,.12);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.area{
+background:#10283b;
+text-align:center
+}
+.area .intro{
+margin:0 auto 25px
 }
 
-.nav {
-  min-height: 76px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+.reviews{background:#071522}
+.review{
+background:#0e2435;
+border:1px solid rgba(255,255,255,.09);
+padding:26px;
+border-radius:8px
+}
+.review p{
+color:#d6e0e8;
+margin-bottom:16px
+}
+.review strong{color:#54baff}
+
+.cta{
+background:#168ee0;
+text-align:center
+}
+.cta p{
+font-size:18px;
+margin-bottom:24px
 }
 
-.brand {
-  font-size: 21px;
-  font-weight: 900;
-  letter-spacing: .5px;
+footer{
+background:#030b12;
+text-align:center;
+padding:40px 20px;
+color:#8ea0ae
+}
+footer strong{
+display:block;
+color:#fff;
+font-size:20px
+}
+.demo{
+margin-top:16px;
+font-size:12px;
+color:#617786
 }
 
-.brand span {
-  color: #32a9ff;
+@media(max-width:800px){
+
+.hero{
+min-height:690px;
+align-items:flex-end;
+background:
+linear-gradient(0deg,
+rgba(4,18,31,.99) 0%,
+rgba(4,18,31,.91) 43%,
+rgba(4,18,31,.30) 75%,
+rgba(4,18,31,.05) 100%),
+url("24E18FED-9170-4932-A237-A1ACD33E6588.png")
+68% center/cover no-repeat;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
+.hero-copy{
+padding:300px 0 105px
 }
 
-nav a:hover {
-  color: #32a9ff;
+h1{font-size:45px}
+
+.grid,
+.about-grid{
+grid-template-columns:1fr
 }
 
-.header-phone {
-  background: #ff6738;
-  padding: 11px 17px;
-  border-radius: 5px;
-  font-weight: 800;
+.trust-row{
+justify-content:center;
+flex-wrap:wrap;
+padding:12px 0;
+font-size:11px
 }
 
-/* HERO */
-
-.hero {
-  position: relative;
-  min-height: 680px;
-  display: flex;
-  align-items: center;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(4,18,31,.97) 0%,
-      rgba(4,18,31,.88) 38%,
-      rgba(4,18,31,.42) 65%,
-      rgba(4,18,31,.10) 100%
-    ),
-    url("hero.jpg") center center / cover no-repeat;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 650px;
-  padding: 85px 0;
-}
-
-.eyebrow {
-  color: #63c4ff;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.hero h1 {
-  font-size: clamp(46px, 7vw, 78px);
-  line-height: .98;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: -2px;
-  margin-bottom: 24px;
-}
-
-.hero h1 span {
-  color: #35adff;
-}
-
-.hero p {
-  font-size: 20px;
-  max-width: 570px;
-  color: #e3ebf2;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 15px 23px;
-  border-radius: 5px;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.btn-orange {
-  background: #ff6738;
-  color: #fff;
-}
-
-.btn-blue {
-  background: #168ee0;
-  color: #fff;
-}
-
-.btn-outline {
-  border: 1px solid rgba(255,255,255,.55);
-  color: #fff;
-}
-
-.hero-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(3,13,22,.88);
-  border-top: 1px solid rgba(255,255,255,.15);
-}
-
-.hero-trust {
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  color: #d7e5ef;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-/* GENERAL SECTIONS */
-
-section {
-  padding: 85px 0;
-}
-
-.section-label {
-  color: #4cb8ff;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-.section-title {
-  font-size: clamp(34px, 5vw, 50px);
-  line-height: 1.05;
-  margin-bottom: 18px;
-}
-
-.section-intro {
-  color: #aebdca;
-  max-width: 700px;
-  font-size: 18px;
-}
-
-/* SERVICES */
-
-.services {
-  background: #0b1d2c;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 42px;
-}
-
-.service {
-  background: #10283b;
-  border: 1px solid rgba(255,255,255,.09);
-  padding: 30px;
-  border-radius: 7px;
-}
-
-.service h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.service p {
-  color: #b8c7d2;
-}
-
-/* ABOUT */
-
-.about {
-  background: #071522;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.about-copy p {
-  color: #b8c7d2;
-  font-size: 17px;
-  margin: 18px 0;
-}
-
-.promise {
-  background: #10283b;
-  border-left: 5px solid #ff6738;
-  padding: 30px;
-}
-
-.promise h3 {
-  font-size: 27px;
-  margin-bottom: 12px;
-}
-
-.promise p {
-  color: #c5d2dc;
-}
-
-/* SERVICE AREA */
-
-.area {
-  background: #10283b;
-  text-align: center;
-}
-
-.area .section-intro {
-  margin: 0 auto 30px;
-}
-
-/* REVIEWS */
-
-.reviews {
-  background: #071522;
-}
-
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.review {
-  background: #0e2435;
-  border: 1px solid rgba(255,255,255,.09);
-  padding: 28px;
-  border-radius: 7px;
-}
-
-.review p {
-  color: #d6e0e8;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.review strong {
-  color: #54baff;
-}
-
-/* CTA */
-
-.cta {
-  background: #168ee0;
-  text-align: center;
-  padding: 70px 0;
-}
-
-.cta h2 {
-  font-size: clamp(35px, 5vw, 53px);
-  line-height: 1.05;
-  margin-bottom: 16px;
-}
-
-.cta p {
-  font-size: 19px;
-  margin-bottom: 28px;
-}
-
-/* FOOTER */
-
-footer {
-  background: #030b12;
-  padding: 45px 0;
-  text-align: center;
-  color: #9cadba;
-}
-
-footer strong {
-  display: block;
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 7px;
-}
-
-.disclaimer {
-  font-size: 12px;
-  color: #687b89;
-  margin-top: 20px;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-  nav a:not(.header-phone) {
-    display: none;
-  }
-
-  .nav {
-    min-height: 68px;
-  }
-
-  .brand {
-    font-size: 17px;
-  }
-
-  .header-phone {
-    font-size: 12px;
-    padding: 10px 12px;
-  }
-
-  .hero {
-    min-height: 690px;
-    align-items: flex-end;
-    background:
-      linear-gradient(
-        0deg,
-        rgba(4,18,31,.99) 0%,
-        rgba(4,18,31,.91) 42%,
-        rgba(4,18,31,.35) 75%,
-        rgba(4,18,31,.12) 100%
-      ),
-      url("hero.jpg") 68% center / cover no-repeat;
-  }
-
-  .hero-content {
-    padding: 300px 0 105px;
-  }
-
-  .hero h1 {
-    font-size: 47px;
-  }
-
-  .hero p {
-    font-size: 17px;
-  }
-
-  .hero-trust {
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 12px 0;
-    font-size: 11px;
-  }
-
-  .service-grid,
-  .review-grid,
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 65px 0;
-  }
+.brand{font-size:16px}
+.phone{font-size:12px}
 }
 </style>
 </head>
@@ -429,265 +261,214 @@ footer strong {
 <body>
 
 <header>
-  <div class="wrap nav">
-    <div class="brand">BLUE COLLAR <span>PLUMBING CO.</span></div>
-
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a class="header-phone" href="tel:2105550197">Call (210) 555-0197</a>
-    </nav>
-  </div>
+<div class="wrap nav">
+<div class="brand">BLUE COLLAR <span>PLUMBING CO.</span></div>
+<a class="phone" href="tel:2105550197">CALL NOW</a>
+</div>
 </header>
 
-<main>
-
 <section class="hero">
-  <div class="wrap">
-    <div class="hero-content">
+<div class="wrap">
+<div class="hero-copy">
 
-      <div class="eyebrow">Local • Reliable • Straight-Shooting</div>
+<div class="eyebrow">Local • Reliable • Straight-Shooting</div>
 
-      <h1>
-        Plumbing problems<br>
-        don't wait.<br>
-        <span>Neither do we.</span>
-      </h1>
+<h1>
+Plumbing problems<br>
+don't wait.<br>
+<span>Neither do we.</span>
+</h1>
 
-      <p>
-        Fast, dependable residential and commercial plumbing service
-        across San Antonio — without the runaround.
-      </p>
+<p>
+Fast, dependable residential and commercial plumbing service across San Antonio — without the runaround.
+</p>
 
-      <div class="buttons">
-        <a class="btn btn-orange" href="tel:2105550197">
-          Call (210) 555-0197
-        </a>
+<div class="buttons">
+<a class="btn orange" href="tel:2105550197">
+Call (210) 555-0197
+</a>
 
-        <a class="btn btn-outline" href="#services">
-          View Services
-        </a>
-      </div>
+<a class="btn outline" href="#services">
+View Services
+</a>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 
-  <div class="hero-bottom">
-    <div class="wrap hero-trust">
-      <span>Residential Plumbing</span>
-      <span>Commercial Plumbing</span>
-      <span>Emergency Service</span>
-      <span>San Antonio, Texas</span>
-    </div>
-  </div>
+<div class="trust">
+<div class="wrap trust-row">
+<span>Residential Plumbing</span>
+<span>Commercial Plumbing</span>
+<span>Emergency Service</span>
+<span>San Antonio, Texas</span>
+</div>
+</div>
 </section>
 
 
 <section class="services" id="services">
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="section-label">What We Do</div>
+<div class="label">What We Do</div>
 
-    <h2 class="section-title">
-      Plumbing solutions without the bullshit.
-    </h2>
+<h2>Plumbing solutions without the bullshit.</h2>
 
-    <p class="section-intro">
-      From the annoying drip that won't quit to the problem that just
-      turned your kitchen into a swimming pool, we show up ready to work.
-    </p>
+<p class="intro">
+From the annoying drip that won't quit to the problem that just turned your kitchen into a swimming pool, we show up ready to work.
+</p>
 
-    <div class="service-grid">
+<div class="grid">
 
-      <div class="service">
-        <h3>Emergency Plumbing</h3>
-        <p>
-          Plumbing emergencies don't care what time it is.
-          When something goes wrong, call us.
-        </p>
-      </div>
+<div class="card">
+<h3>Emergency Plumbing</h3>
+<p>When something goes wrong and it can't wait, call us.</p>
+</div>
 
-      <div class="service">
-        <h3>Drain & Sewer</h3>
-        <p>
-          Slow drains, backups, clogged lines and sewer problems
-          diagnosed and handled properly.
-        </p>
-      </div>
+<div class="card">
+<h3>Drain & Sewer</h3>
+<p>Slow drains, backups, clogged lines and sewer problems.</p>
+</div>
 
-      <div class="service">
-        <h3>Water Heaters</h3>
-        <p>
-          Repair, replacement and installation for traditional
-          and tankless water heaters.
-        </p>
-      </div>
+<div class="card">
+<h3>Water Heaters</h3>
+<p>Repair, replacement and installation for traditional and tankless systems.</p>
+</div>
 
-      <div class="service">
-        <h3>Leak Repair</h3>
-        <p>
-          Faucets, pipes, fixtures and hidden leaks.
-          Find the problem. Fix the problem.
-        </p>
-      </div>
+<div class="card">
+<h3>Leak Repair</h3>
+<p>Faucets, pipes, fixtures and hidden leaks found and fixed.</p>
+</div>
 
-      <div class="service">
-        <h3>Residential Plumbing</h3>
-        <p>
-          Dependable plumbing service for homeowners throughout
-          the San Antonio area.
-        </p>
-      </div>
+<div class="card">
+<h3>Residential Plumbing</h3>
+<p>Dependable plumbing service throughout the San Antonio area.</p>
+</div>
 
-      <div class="service">
-        <h3>Commercial Plumbing</h3>
-        <p>
-          Responsive plumbing support for businesses,
-          facilities and commercial properties.
-        </p>
-      </div>
+<div class="card">
+<h3>Commercial Plumbing</h3>
+<p>Responsive plumbing support for local businesses and commercial properties.</p>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 
-<section class="about" id="about">
-  <div class="wrap about-grid">
+<section class="about">
+<div class="wrap about-grid">
 
-    <div class="about-copy">
+<div>
+<div class="label">Blue Collar Plumbing Co.</div>
 
-      <div class="section-label">Blue Collar Plumbing Co.</div>
+<h2>
+Honest work.<br>
+Stronger communities.
+</h2>
 
-      <h2 class="section-title">
-        Honest work.<br>
-        Stronger communities.
-      </h2>
+<p>
+We're plumbers. We believe the job is simple: show up when we say we will, tell you what's actually wrong, explain what it takes to fix it and do the work right.
+</p>
 
-      <p>
-        We're plumbers. We believe the job is pretty simple:
-        show up when we say we will, tell you what's actually wrong,
-        explain what it takes to fix it, and do the work right.
-      </p>
+<p>
+No confusing sales pitch. No unnecessary work. No disappearing when you need us.
+</p>
 
-      <p>
-        No confusing sales pitch. No unnecessary work.
-        No disappearing when you need us.
-      </p>
+<a class="btn orange" href="tel:2105550197">
+Talk To A Plumber
+</a>
+</div>
 
-      <a class="btn btn-blue" href="tel:2105550197">
-        Talk To A Plumber
-      </a>
+<div class="promise">
+<h3>The Blue Collar Promise</h3>
+<p>
+Straight answers. Dependable service. Respect for your home, your business and your time.
+</p>
+</div>
 
-    </div>
-
-    <div class="promise">
-      <h3>The Blue Collar Promise</h3>
-      <p>
-        Straight answers. Dependable service. Respect for your home,
-        your business and your time.
-      </p>
-    </div>
-
-  </div>
+</div>
 </section>
 
 
 <section class="area">
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="section-label">Proudly Serving San Antonio</div>
+<div class="label">Proudly Serving San Antonio</div>
 
-    <h2 class="section-title">
-      Local plumbers serving local people.
-    </h2>
+<h2>Local plumbers serving local people.</h2>
 
-    <p class="section-intro">
-      Blue Collar Plumbing Co. provides dependable plumbing service
-      throughout San Antonio and surrounding communities.
-    </p>
+<p class="intro">
+Dependable plumbing service throughout San Antonio and surrounding communities.
+</p>
 
-    <a class="btn btn-orange" href="tel:2105550197">
-      Call For Service
-    </a>
+<a class="btn orange" href="tel:2105550197">
+Call For Service
+</a>
 
-  </div>
+</div>
 </section>
 
 
-<section class="reviews" id="reviews">
-  <div class="wrap">
+<section class="reviews">
+<div class="wrap">
 
-    <div class="section-label">Customer Reviews</div>
+<div class="label">Customer Reviews</div>
 
-    <h2 class="section-title">
-      The kind of service people remember.
-    </h2>
+<h2>The kind of service people remember.</h2>
 
-    <div class="review-grid">
+<div class="grid">
 
-      <div class="review">
-        <p>
-          “They showed up when they said they would, explained the problem
-          clearly and got it fixed. Exactly what you want from a plumber.”
-        </p>
-        <strong>— San Antonio Homeowner</strong>
-      </div>
+<div class="review">
+<p>
+“They showed up when they said they would, explained the problem clearly and got it fixed.”
+</p>
+<strong>— Demo Customer</strong>
+</div>
 
-      <div class="review">
-        <p>
-          “Professional, straightforward and easy to deal with.
-          No pressure and no surprises.”
-        </p>
-        <strong>— Local Business Owner</strong>
-      </div>
+<div class="review">
+<p>
+“Professional, straightforward and easy to deal with. No pressure and no surprises.”
+</p>
+<strong>— Demo Customer</strong>
+</div>
 
-      <div class="review">
-        <p>
-          “Fast response and great communication from beginning to end.
-          I'd call them again.”
-        </p>
-        <strong>— San Antonio Customer</strong>
-      </div>
+<div class="review">
+<p>
+“Fast response, solid work and great communication from beginning to end.”
+</p>
+<strong>— Demo Customer</strong>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 
 <section class="cta">
-  <div class="wrap">
+<div class="wrap">
 
-    <h2>Got a plumbing problem?</h2>
+<h2>Got a plumbing problem?</h2>
 
-    <p>
-      Tell us what's going on. We'll help you figure out what comes next.
-    </p>
+<p>Tell us what's going on. We'll help you get it handled.</p>
 
-    <a class="btn btn-orange" href="tel:2105550197">
-      Call (210) 555-0197
-    </a>
+<a class="btn orange" href="tel:2105550197">
+Call (210) 555-0197
+</a>
 
-  </div>
+</div>
 </section>
-
-</main>
 
 
 <footer>
-  <div class="wrap">
 
-    <strong>BLUE COLLAR PLUMBING CO.</strong>
+<strong>BLUE COLLAR PLUMBING CO.</strong>
 
-    San Antonio, Texas • (210) 555-0197
+San Antonio, Texas
 
-    <div class="disclaimer">
-      This is a fictional demonstration website created for concept and
-      presentation purposes.
-    </div>
+<div class="demo">
+Fictional demonstration website created to showcase a one-page business website.
+</div>
 
-  </div>
 </footer>
 
 </body>
